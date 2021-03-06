@@ -70,6 +70,14 @@
             font-size: 14px;
         }
     }
+    .carousel {
+        &__inner {
+            width: 500px;
+            img {
+                width: 100%;
+            }
+        }
+    }
 }
 
 @media screen and ( max-width: 575px) {
@@ -132,6 +140,14 @@
         &__descr {
             font-size: 10px;
             margin-top: 40px;
+        }
+    }
+    .carousel {
+        &__inner {
+            width: 250px;
+            img {
+                width: 100%;
+            }
         }
     }
 }
