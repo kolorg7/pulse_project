@@ -73,8 +73,22 @@
     .carousel {
         &__inner {
             width: 500px;
-            img {
-                width: 100%;
+            .slick-track {
+                .slick-slide {
+                    img {
+                        width: 100%;
+                    }
+                    &:nth-child(2) {
+                        img {
+                            margin-top: 10px;
+                        }
+                    }
+                    &:nth-child(4) {
+                        img {
+                            margin-top: 26px;
+                        }
+                    }
+                }
             }
         }
     }
