@@ -29,6 +29,9 @@
         }
         div {
             transform: skew(25deg);
+            br {
+                display: none;
+            }
         }
         &_active {
             color: #fff;
@@ -54,6 +57,9 @@
         margin-left: 20px;
         &:nth-child(4), &:nth-child(5), &:nth-child(6) {
             margin-top: 20px;
+        }
+        &:nth-child(1), &:nth-child(4) {
+            margin-left: 0;
         }
         img {
             display: block;
