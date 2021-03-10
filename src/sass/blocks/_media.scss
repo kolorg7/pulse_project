@@ -34,6 +34,7 @@
         &__tab {
             &:hover {
                 box-shadow: none;
+                border: 2px solid #d0d0d0;
             }
         }
     }
@@ -219,9 +220,6 @@
         &__tab {
             width: 160px;
             font-size: 15px;
-            &:hover {
-                box-shadow: none;
-            }
         }
         &-item {
             &:nth-child(3), &:nth-child(5) {
@@ -351,9 +349,6 @@
             height: 42px;
             font-size: 10px;
             line-height: 12px;
-            &:hover {
-                box-shadow: none;
-            }
             div {
                 margin-top: 8px;
                 br {
@@ -391,6 +386,16 @@
                 width: 50px;
                 height: 50px;
             }
+        }
+    }
+    .modal {
+        .feed-form {
+            width: 250px;
+        }
+        &__close {
+            top: 10px;
+            right: 10px;
+            font-size: 30px;
         }
     }
 }
