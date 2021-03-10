@@ -389,13 +389,18 @@
         }
     }
     .modal {
-        .feed-form {
-            width: 250px;
-        }
         &__close {
             top: 10px;
             right: 10px;
             font-size: 30px;
+        }
+    }
+}
+
+@media screen and ( max-width: 575px) {
+    .modal {
+        &__close {
+                right: 40px;
         }
     }
 }

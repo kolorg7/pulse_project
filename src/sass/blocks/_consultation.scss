@@ -9,4 +9,12 @@
         color: #ffffff;
         margin-top: 80px;
     }
+    .error {
+        border: 1px solid red;
+    }
+    label.error {
+        color: #ffffff;
+        border: none;
+        text-align: center;
+    }
 }

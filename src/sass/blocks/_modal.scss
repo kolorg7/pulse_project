@@ -12,8 +12,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 380px;
-    max-height: 400px;
+    min-width: 380px;
+    min-height: 400px;
     background-color: #f2f2f2;
     padding: 38px 42px 40px 37px;
     &__close {
@@ -42,6 +42,13 @@
     }
     &_mini {
         min-height: 140px;
+    }
+    .error {
+        border: 1px solid red;
+    }
+    label.error {
+        border: none;
+        text-align: center;
     }
 }
 
