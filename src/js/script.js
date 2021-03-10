@@ -1,3 +1,6 @@
+
+//Slick - sliders
+
 $(document).ready(function(){
     $('.carousel__inner').slick({
         infinite: true,
@@ -33,7 +36,7 @@ $(document).ready(function(){
     toggleSlide('.catalog-item__link');
     toggleSlide('.catalog-item__back');
 
-    //Modal
+    //Forms
 
     $('[data-modal=consultation]').on('click', function() {
         $('.overlay, #consultation').fadeIn('slow');
@@ -48,6 +51,8 @@ $(document).ready(function(){
             $('.overlay, #order').fadeIn('slow');
         });
     });
+
+    //Validations forms
 
     function validateForms(form) {
         $(form).validate({
@@ -81,4 +86,27 @@ $(document).ready(function(){
     validateForms('#order form');
 
     $('input[name=phone]').mask("+7 (999) 999-99-99");
+
+    //Ajax
+
+    $('form').submit(function(e) {
+        e.preventDefault();
+
+        if (!$(this).valid()) {
+            return;
+        }
+
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+            $('#consultation, #order').fadeOut();
+            $('.overlay, #thanks').fadeIn('slow');
+
+            $('form').trigger('reset');
+        });
+        return false;
+    });
 });
