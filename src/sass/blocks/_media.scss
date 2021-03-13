@@ -212,17 +212,6 @@
                 height: 50px;
             }
         }
-        .button {
-            &_submit {
-                width: 100%;
-                height: 50px;
-                &:hover {
-                    width: 290px;
-                    height: 50px;
-                    box-shadow: none;
-                }
-            }
-        }
     }
     .carousel {
         &__inner {
