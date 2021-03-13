@@ -10,9 +10,9 @@
     border: none;
     transition: 0.3s all;
     &:hover {
-        width: 155px;
-        height: 35px;
-        font-size: 13px;
+        width: 154px;
+        height: 34px;
+        font-size: 12.5px;
         box-shadow: 3px 3px 20px $main-color;
     }
     &_main {
@@ -22,9 +22,9 @@
         font-size: 16px;
         transition: 0.3s all;
         &:hover {
-            width: 305px;
-            height: 55px;
-            font-size: 17px;
+            width: 304px;
+            height: 54px;
+            font-size: 16.5px;
         }
     }
     &_submit {
@@ -34,9 +34,9 @@
         margin-top: 20px;
         transition: 0.3s all;
         &:hover {
-            width: 305px;
-            height: 60px;
-            font-size: 17px;
+            width: 304px;
+            height: 59px;
+            font-size: 16.5px;
         }
     }
     &_mini {
@@ -45,10 +45,9 @@
         font-size: 14px;
         transition: 0.3s all;
         &:hover {
-            width: 136px;
-            height: 45px;
-            font-size: 15px;
-            box-shadow: 3px 3px 20px $main-color;
+            width: 135px;
+            height: 44px;
+            font-size: 14.5px;
         }
     }
 }

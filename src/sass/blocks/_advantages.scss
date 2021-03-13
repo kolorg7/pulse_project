@@ -39,21 +39,18 @@
     }
     &__icon {
         &_heartbeat {
-            animation: heartbeat 1.5s ease infinite;
             &:hover {
-                animation-play-state: paused;
+                animation: heartbeat 1.5s ease infinite;
             }
         }
         &_run {
-            animation: run 1.5s ease infinite;
             &:hover {
-                animation-play-state: paused;
+                animation: run 0.5s ease infinite;
             }
         }
         &_cup {
-            animation: cup 1.5s ease infinite;
             &:hover {
-                animation-play-state: paused;
+                animation: cup 1s ease infinite;
             }
         }
     }
